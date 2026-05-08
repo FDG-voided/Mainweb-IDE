@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+}
+
+.card {
+  text-align: center;
+  padding: 48px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: var(--accent);
+  border-radius: var(--radius-lg);
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+}
+
+.loginBtn {
+  width: 100%;
+  padding: 14px 24px;
+  font-size: 16px;
+}
+
+.hint {
+  margin-top: 24px;
+  font-size: 13px;
+  color: var(--text-muted);
+}

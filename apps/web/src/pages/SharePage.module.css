@@ -1,0 +1,132 @@
+.container {
+  min-height: 100vh;
+  background: var(--bg-primary);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.loading,
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.error h2 {
+  margin-bottom: 8px;
+}
+
+.error p {
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 48px 32px;
+}
+
+.projectInfo {
+  margin-bottom: 40px;
+}
+
+.projectInfo h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.projectInfo p {
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.meta {
+  display: flex;
+  gap: 24px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.fileList {
+  margin-bottom: 40px;
+}
+
+.fileList h3,
+.preview h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.fileList ul {
+  list-style: none;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.fileList li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.fileList li:last-child {
+  border-bottom: none;
+}
+
+.filePath {
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+.fileLang {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.empty {
+  color: var(--text-muted);
+  padding: 24px;
+  text-align: center;
+  background: var(--bg-secondary);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-md);
+}
+
+.preview {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+}
+
+.preview pre {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  white-space: pre-wrap;
+  word-break: break-all;
+  max-height: 400px;
+  overflow-y: auto;
+}

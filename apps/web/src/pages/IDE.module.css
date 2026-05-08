@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.workspace {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.editorArea {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  background: var(--bg-primary);
+}
+
+.editorWrapper {
+  flex: 1;
+  overflow: hidden;
+}
+
+.noFile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text-muted);
+}
+
+.noFile svg {
+  margin-bottom: 16px;
+}
+
+.noFile h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.noFile p {
+  font-size: 14px;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: var(--text-secondary);
+}
